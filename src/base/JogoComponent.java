@@ -6,6 +6,7 @@
 package base;
 
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 import javax.swing.JComponent;
@@ -27,7 +28,7 @@ public class JogoComponent extends JComponent implements ComponentListener {
 
     @Override
     protected void paintComponent(Graphics g) {
-        jogo.desenha(g);
+        jogo.desenha((Graphics2D)g);
     }
 
     @Override

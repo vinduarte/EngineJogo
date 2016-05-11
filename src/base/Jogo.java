@@ -5,7 +5,7 @@
  */
 package base;
 
-import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -76,6 +76,6 @@ public abstract class Jogo implements KeyListener {
     }
     
     public abstract void inicia();
-    public abstract void desenha(Graphics g);
+    public abstract void desenha(Graphics2D g);
     public abstract void atualiza();
 }

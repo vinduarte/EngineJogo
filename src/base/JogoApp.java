@@ -5,6 +5,7 @@
  */
 package base;
 
+import java.awt.Color;
 import javax.swing.JFrame;
 
 /**
@@ -17,6 +18,7 @@ public class JogoApp {
         JFrame janela = new JFrame(jogo.getTitulo());
         janela.setSize(jogo.getLargura(), jogo.getAltura());
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        janela.getContentPane().setBackground(Color.black);
         
         JogoComponent comp = new JogoComponent(jogo);
         janela.add(comp);
